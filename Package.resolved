@@ -1,5 +1,5 @@
 {
-  "originHash" : "abecbf5bbf670b94e462fae9cb8cb29f84304731963c531629af1505815904cc",
+  "originHash" : "146ca6ea2c5efa3ba8d1d09cfffba8b02d22170fb8e9da6afef39db750b24841",
   "pins" : [
     {
       "identity" : "async-http-client",
@@ -51,7 +51,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/yusuga/openapi-sample-spec.git",
       "state" : {
-        "revision" : "f83d735a87233095e8b2b625da53651c44a213cc"
+        "revision" : "39134747de92dc33b1293979ecbb4e5cec1963f4"
       }
     },
     {

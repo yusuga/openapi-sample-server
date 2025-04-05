@@ -6,9 +6,9 @@ struct UserAPIController: MyServiceUserAPIServer.APIProtocol {
 
   @Dependency(\.httpBingoClient) var httpBingoClient
 
-  func getUserGet(
-    _ input: MyServiceUserAPIServer.Operations.GetUserGet.Input
-  ) async throws -> MyServiceUserAPIServer.Operations.GetUserGet.Output {
+  func getUser(
+    _ input: MyServiceUserAPIServer.Operations.GetUser.Input
+  ) async throws -> MyServiceUserAPIServer.Operations.GetUser.Output {
     let result = try await httpBingoClient.getGet()
 
     return try .ok(

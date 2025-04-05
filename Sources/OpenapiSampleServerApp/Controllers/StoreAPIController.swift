@@ -4,11 +4,12 @@ import PostmanEchoClient
 
 struct StoreAPIController: MyServiceStoreAPIServer.APIProtocol {
 
+
   @Dependency(\.postmanEchoClient) var postmanEchoClient
 
-  func getStoreGet(
-    _ input: MyServiceStoreAPIServer.Operations.GetStoreGet.Input
-  ) async throws -> MyServiceStoreAPIServer.Operations.GetStoreGet.Output {
+  func getStore(
+    _ input: MyServiceStoreAPIServer.Operations.GetStore.Input
+  ) async throws -> MyServiceStoreAPIServer.Operations.GetStore.Output {
     let result = try await postmanEchoClient.getGet()
 
     return try .ok(
